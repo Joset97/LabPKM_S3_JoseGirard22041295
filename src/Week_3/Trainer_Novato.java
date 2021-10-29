@@ -25,7 +25,12 @@ public class Trainer_Novato extends Entrenador {
         boolean seleccionado = false;
 
         while (seleccionado) {
-            int Tipo = read.nextInt();
+            int Tipo;
+            System.out.println("Seleccione el tipo:\n"
+                    + "1.Fuego\n"
+                    + "2.Planta\n"
+                    + "3.Agua\n");
+            Tipo = read.nextInt();
 
             switch (Tipo) {
                 case (1):
