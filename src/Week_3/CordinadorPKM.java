@@ -63,9 +63,28 @@ public class CordinadorPKM extends Entrenador {
             res = read.nextInt();
             if (res == 1) {
 
-            }else{seleccionado=true;}
+                System.out.println("Ingrese el nombre de su pokemon");
+                name = read.next();
+                System.out.println("Ingrese su ataque (rango 100-200)");
+                atk = read.nextInt();
+                System.out.println("Ingrese su vida (rango 200-500)");
+                vida = read.nextInt();
+                
+
+            } else {
+                seleccionado = true;
+            }
 
         }
     }
 
+    public void listaPKM(){
+    
+        for (Pokemon pkm : pkms) {
+            
+            System.out.println(pkm + "/n");
+        }
+        
+    }
+    
 }
